@@ -1,0 +1,292 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* Apply font styles as mentioned above */
+/* Navigation Bar and Headings */
+h1, h2, h3,
+.navClass {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Body Text */
+body, p, ul, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer */
+footer {
+    color: #DBEDF3;
+    font-family: sans-serif;
+    margin-top: 20px; /* Add margin to separate footer from content */
+}
+
+/* -------------------------------------------------------------------------------------- */
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+/* class operators */
+.btn {
+    border-radius: 18px; /* Add some border-radius to buttons */
+    font-weight: bold;
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+.colDesign {
+    background-color: white;
+    text-align: left;
+}
+
+.drum {
+    background-color: white;
+    border: 10px solid #404B69;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    color: #DA0463;
+    display: inline-block;
+    font-family: 'Arvo', cursive;
+    font-size: 5rem;
+    font-weight: 900;
+    height: 150px;
+    line-height: 2;
+    margin: 10px;
+    outline: none;
+    text-align: center;
+    text-shadow: 3px 0 #DBEDF3;
+    width: 150px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add transition effects */
+}
+
+.gridContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 8fr 6fr;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px; /* Add padding to navigation links */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #DBEDF3; /* Change background color on hover */
+    color: #404B69;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+.set {
+    margin: 10% auto;
+}
+
+.toolLink {
+    color: black;
+    text-decoration: none;
+}
+
+.toolLink:hover {
+    color: rgb(18, 218, 224);
+}
+
+/* Main content */
+.divFirst {
+    background-color: white;
+    border-color: rgb(243, 243, 243);
+    border-radius: 15px;
+    border-style: solid solid none none;
+    border-width: 0.5rem;
+}
+
+.divSecond {
+    background-color: white;
+    border-color: rgb(243, 243, 243);
+    border-radius: 15px;
+    border-style: solid none none solid;
+    border-width: 0.5rem;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  
+/* Style for the footer text */
+.footer-text {
+font-size: 16px;
+color: #6c757d;
+}
+
+
+/* Main content */
+.gridContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 8fr 6fr;
+}
+
+/* Main content - Drum buttons */
+.a {
+    background-image: url(../images/tom2.png);
+}
+
+.d {
+    background-image: url(../images/tom4.png);
+}
+
+.j {
+    background-image: url(../images/snare.png);
+}
+
+.k {
+    background-image: url(../images/crash.png);
+}
+
+.l {
+    background-image: url(../images/kick.png);
+}
+
+.s {
+    background-image: url(../images/tom3.png);
+}
+
+.w {
+    background-image: url(../images/tom1.png);
+}
+
+/* Main content - Drum buttons */
+.drum:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: scale(1.05); /* Enlarge the button slightly on hover */
+}
+
+/* Navbar */
+.brandName {
+    font-size: 2rem;
+}
+
+/* Navbar */
+.navClass {
+    margin-bottom: 10px;
+    padding: 15px 5.5rem;
+}
+
+/* Navbar links */
+.navClass .nav-link {
+    padding: 10px 15px; /* Add padding to navigation links */
+}
+
+/* Navbar links on hover */
+.navClass .nav-link:hover {
+    background-color: #DBEDF3;
+    color: #404B69;
+}
+
+/* ToodLink */
+.toodLink {
+    color: black;
+    text-decoration: none;
+}
+
+/* ToodLink on hover */
+.toodLink:hover {
+    color: rgb(18, 218, 224);
+}
+
+
+/* Style for the social media icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons li {
+    margin-left: 15px;
+}
+
+.social-icons a {
+    color: #007bff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+
+
+@media (max-width: 1100px) {
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 50px;
+    }
+}
+
+@media (max-width: 985px) {
+    .divFirst {
+      display: none;
+    }
+  
+    .divSecond {
+      width: 100%; /* Make divSecond take up the full width */
+    }
+
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 110px;
+    }
+}
+
+@media (max-width:860px) {
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 50px;
+    }
+}
+
+@media (max-width:766px) {
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 5.5rem;
+    }
+}
+
+@media (max-width:700px) {
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 4.5rem;
+    }
+}
+
+
+@media (max-width:660px) {
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 3.3rem;
+    }
+}
+
+@media (max-width:590px) {
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 1.3rem;
+    }
+}
+
+@media (max-width:550px) {
+    .navClass {
+        margin-bottom: 10px;
+        padding: 15px 0;
+    }
+}
+
+  
